@@ -1,0 +1,104 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{5368AF57-74ED-4499-BCCD-38BCB18C4629}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageProcessor", "src\ImageProcessor\ImageProcessor.csproj", "{3B5DD734-FB7A-487D-8CE6-55E7AF9AEA7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageProcessor.Plugins.WebP", "src\ImageProcessor.Plugins.WebP\ImageProcessor.Plugins.WebP.csproj", "{2CF69699-959A-44DC-A281-4E2596C25043}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{4E1AB050-8CC4-4099-80AF-7FF2BFC000E9}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		build\build.cmd = build\build.cmd
+		build\build.ps1 = build\build.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuSpecs", "NuSpecs", "{E0B81C77-6E29-4500-9E9F-F0B72EBE8241}"
+	ProjectSection(SolutionItems) = preProject
+		build\NuSpecs\ImageProcessor.nuspec = build\NuSpecs\ImageProcessor.nuspec
+		build\NuSpecs\ImageProcessor.Plugins.Cair.nuspec = build\NuSpecs\ImageProcessor.Plugins.Cair.nuspec
+		build\NuSpecs\ImageProcessor.Plugins.WebP.nuspec = build\NuSpecs\ImageProcessor.Plugins.WebP.nuspec
+		build\NuSpecs\ImageProcessor.Web.Config.nuspec = build\NuSpecs\ImageProcessor.Web.Config.nuspec
+		build\NuSpecs\ImageProcessor.Web.nuspec = build\NuSpecs\ImageProcessor.Web.nuspec
+		build\NuSpecs\ImageProcessor.Web.Plugins.AmazonS3Cache.nuspec = build\NuSpecs\ImageProcessor.Web.Plugins.AmazonS3Cache.nuspec
+		build\NuSpecs\ImageProcessor.Web.Plugins.AzureBlobCache.nuspec = build\NuSpecs\ImageProcessor.Web.Plugins.AzureBlobCache.nuspec
+		build\NuSpecs\ImageProcessor.Web.PostProcessor.nuspec = build\NuSpecs\ImageProcessor.Web.PostProcessor.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transforms", "Transforms", "{19517DBA-58AA-4294-97BF-0D02902749B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageProcessor.Web.Config", "ImageProcessor.Web.Config", "{62AD9636-93CD-472C-B88D-F5A1EDB26FD1}"
+	ProjectSection(SolutionItems) = preProject
+		build\content\ImageProcessor.Web.Config\web.config.transform = build\content\ImageProcessor.Web.Config\web.config.transform
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageProcessor.Web.Plugins.AzureBlobCache", "ImageProcessor.Web.Plugins.AzureBlobCache", "{44E1864C-333A-4CC2-BFCD-4DF741FDD025}"
+	ProjectSection(SolutionItems) = preProject
+		build\content\ImageProcessor.Web.Plugins.AzureBlobCache\config\imageprocessor\cache.config.transform = build\content\ImageProcessor.Web.Plugins.AzureBlobCache\config\imageprocessor\cache.config.transform
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageProcessor.Plugins.WebP", "ImageProcessor.Plugins.WebP", "{73F53C94-37CC-4981-A31B-BC727ABDB34F}"
+	ProjectSection(SolutionItems) = preProject
+		build\content\ImageProcessor.Plugins.WebP\web.config.transform = build\content\ImageProcessor.Plugins.WebP\web.config.transform
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageProcessor.Web", "ImageProcessor.Web", "{63F86021-9430-43EE-9F59-A74C526A4AB3}"
+	ProjectSection(SolutionItems) = preProject
+		build\content\ImageProcessor.Web\web.config.transform = build\content\ImageProcessor.Web\web.config.transform
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageProcessor.Web.Plugins.AmazonS3Cache", "ImageProcessor.Web.Plugins.AmazonS3Cache", "{CC88B6F8-0164-4E1E-BE17-A1C2D0597F2C}"
+	ProjectSection(SolutionItems) = preProject
+		build\content\ImageProcessor.Web.Plugins.AmazonS3Cache\config\imageprocessor\cache.config.transform = build\content\ImageProcessor.Web.Plugins.AmazonS3Cache\config\imageprocessor\cache.config.transform
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{57BBD0FE-E8BB-45EF-B7EE-EB7669192D0D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		NuGet.config = NuGet.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B5DD734-FB7A-487D-8CE6-55E7AF9AEA7E}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5DD734-FB7A-487D-8CE6-55E7AF9AEA7E}.All|Any CPU.Build.0 = Release|Any CPU
+		{3B5DD734-FB7A-487D-8CE6-55E7AF9AEA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5DD734-FB7A-487D-8CE6-55E7AF9AEA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5DD734-FB7A-487D-8CE6-55E7AF9AEA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5DD734-FB7A-487D-8CE6-55E7AF9AEA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF69699-959A-44DC-A281-4E2596C25043}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF69699-959A-44DC-A281-4E2596C25043}.All|Any CPU.Build.0 = Release|Any CPU
+		{2CF69699-959A-44DC-A281-4E2596C25043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF69699-959A-44DC-A281-4E2596C25043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF69699-959A-44DC-A281-4E2596C25043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF69699-959A-44DC-A281-4E2596C25043}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CF69699-959A-44DC-A281-4E2596C25043} = {5368AF57-74ED-4499-BCCD-38BCB18C4629}
+		{4E1AB050-8CC4-4099-80AF-7FF2BFC000E9} = {57BBD0FE-E8BB-45EF-B7EE-EB7669192D0D}
+		{E0B81C77-6E29-4500-9E9F-F0B72EBE8241} = {4E1AB050-8CC4-4099-80AF-7FF2BFC000E9}
+		{19517DBA-58AA-4294-97BF-0D02902749B4} = {4E1AB050-8CC4-4099-80AF-7FF2BFC000E9}
+		{62AD9636-93CD-472C-B88D-F5A1EDB26FD1} = {19517DBA-58AA-4294-97BF-0D02902749B4}
+		{44E1864C-333A-4CC2-BFCD-4DF741FDD025} = {19517DBA-58AA-4294-97BF-0D02902749B4}
+		{73F53C94-37CC-4981-A31B-BC727ABDB34F} = {19517DBA-58AA-4294-97BF-0D02902749B4}
+		{63F86021-9430-43EE-9F59-A74C526A4AB3} = {19517DBA-58AA-4294-97BF-0D02902749B4}
+		{CC88B6F8-0164-4E1E-BE17-A1C2D0597F2C} = {19517DBA-58AA-4294-97BF-0D02902749B4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58041350-4AD6-4EED-98A1-6DF1698BFFFC}
+	EndGlobalSection
+EndGlobal

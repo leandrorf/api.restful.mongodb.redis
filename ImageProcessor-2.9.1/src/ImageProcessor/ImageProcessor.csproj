@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>ImageProcessor</AssemblyTitle>
+    <Description>A library for on-the-fly processing of image files written in C#</Description>
+    <Company>James Jackson-South</Company>
+    <Product>ImageProcessor</Product>
+    <Copyright>Copyright © James Jackson-South</Copyright>
+    <AssemblyVersion>2.9.0.00000</AssemblyVersion>
+    <FileVersion>2.9.0.00000</FileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\ImageProcessor.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\ImageProcessor.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Imaging\Filters\ObjectDetection\Class1.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\EmbeddedHaarCascades.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\GroupMatching.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarCascade\HaarCascade.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarCascade\HaarCascadeSerializationObject.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarCascade\HaarCascadeStage.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarCascade\HaarCascadeWriter.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarCascade\HaarClassifier.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarCascade\HaarFeature.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarCascade\HaarFeatureNode.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarCascade\HaarRectangle.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\HaarObjectDetector.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\ObjectDetectorScalingMode.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\ObjectDetectorSearchMode.cs" />
+    <Compile Remove="Imaging\Filters\ObjectDetection\RectangleGroupMatching.cs" />
+    <Compile Remove="Processors\DetectObjects.cs" />
+  </ItemGroup>
+</Project>
