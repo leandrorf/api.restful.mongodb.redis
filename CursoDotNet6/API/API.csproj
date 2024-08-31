@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Medias\**" />
+    <Content Remove="Medias\**" />
+    <EmbeddedResource Remove="Medias\**" />
+    <None Remove="Medias\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="8.0.1" />
     <PackageReference Include="AspNetCore.HealthChecks.Redis" Version="8.0.1" />
     <PackageReference Include="AspNetCore.HealthChecks.UI" Version="8.0.1" />
@@ -20,11 +27,6 @@
     <PackageReference Include="System.Drawing.Common" Version="8.0.8" />
     <PackageReference Include="System.Net.Security" Version="4.3.2" />
     <PackageReference Include="System.Text.Json" Version="8.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Medias\Imagens\" />
-    <Folder Include="Medias\Videos\" />
   </ItemGroup>
 
   <ItemGroup>
